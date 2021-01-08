@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Reports from './pages/AddTaux';
 import addSociete from './pages/addSociete';
+import addOperation from './pages/addOperation';
 import {Provider} from 'react-redux';
 import store from './store';
 import SocietesTable from './components/Societes/SocietesTable';
@@ -21,6 +22,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/AddTaux' component={AddTaux} />
           <Route path='/addSociete' component={addSociete} />
+          <Route path='/addOperation' component={addOperation} />
           {/* <Route path='/Societe' component={AddSociete} /> */}
           <Route path='/societeTable' component={SocietesTable} />
           <Route path='/tauxTable' component={TauxTable} />
